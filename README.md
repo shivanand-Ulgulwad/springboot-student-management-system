@@ -18,7 +18,6 @@ A full-stack Spring Boot MVC project with authentication, CRUD operations, pagin
 - Java 17
 - Spring Boot
 - Spring MVC
-- Spring Security
 - Thymeleaf
 - MySQL
 - Bootstrap
