@@ -4,7 +4,7 @@ A full-stack Spring Boot MVC project with authentication, CRUD operations, pagin
 
 ## Features
 
-- Spring Security Login/Register
+
 - Student CRUD
 - Pagination
 - Search
