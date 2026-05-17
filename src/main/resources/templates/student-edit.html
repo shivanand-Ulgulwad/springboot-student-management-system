@@ -30,9 +30,20 @@
                     <input type="number" th:field="*{age}" class="form-control">
                 </div>
                 <!-- File Upload -->
+                <div class="mb-3 text-center">
+
+                    <img th:src="@{'/uploads/' + ${student.imageName}}"
+                         class="rounded shadow"
+                         style="width:100px; height:100px; object-fit:cover;">
+
+                </div>
+
                 <div class="mb-3">
                     <label>Upload New Image</label>
-                    <input type="file" name="file" class="form-control">
+
+                    <input type="file"
+                           name="file"
+                           class="form-control">
                 </div>
                 <button class="btn btn-warning"> Update Student </button>
                 <a th:href="@{/students}" class="btn btn-secondary"> Back </a>

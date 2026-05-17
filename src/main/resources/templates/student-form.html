@@ -12,22 +12,34 @@
             <form th:action="@{/students}" method="post" enctype="multipart/form-data" th:object="${student}"> <!-- Name -->
                 <div class="mb-3">
                     <label>Name</label>
-                    <input type="text" th:field="*{name}" class="form-control">
+                    <input type="text"
+                           th:field="*{name}"
+                           class="form-control"
+                           th:classappend="${#fields.hasErrors('name')} ? 'is-invalid'">
                     <small class="text-danger" th:errors="*{name}"> </small>
                 </div>
                 <!-- Email -->
                 <div class="mb-3">
                     <label>Email</label>
-                    <input type="email" th:field="*{email}" class="form-control">
+                    <input type="email"
+                           th:field="*{email}"
+                           class="form-control"
+                           th:classappend="${#fields.hasErrors('email')} ? 'is-invalid'">
                     <small class="text-danger" th:errors="*{email}"> </small>
                 </div> <!-- Course -->
                 <div class="mb-3">
                     <label>Course</label>
-                    <input type="text" th:field="*{course}" class="form-control">
+                    <input type="text"
+                           th:field="*{course}"
+                           class="form-control"
+                           th:classappend="${#fields.hasErrors('course')} ? 'is-invalid'">
                     <small class="text-danger" th:errors="*{course}"> </small>
                 </div> <!-- Age --> <div class="mb-3">
                     <label>Age</label>
-                    <input type="number" th:field="*{age}" class="form-control">
+                    <input type="number"
+                           th:field="*{age}"
+                           class="form-control"
+                           th:classappend="${#fields.hasErrors('age')} ? 'is-invalid'">
                     <small class="text-danger" th:errors="*{age}"> </small>
                 </div> <!-- File Upload --> <div class="mb-3">
                     <label>Upload Image</label>
